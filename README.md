@@ -17,29 +17,6 @@ AI-powered **Course Recommendation System** that suggests courses based on your 
 
 ---
 
-## 📁 Project Structure
-
-project-root/
-├── backend/
-│ ├── main.py # FastAPI backend
-│ ├── recommender_utils.py # Similarity & recommendation functions
-│ ├── artifacts/ # Saved TF-IDF/CountVectorizer matrices
-│ ├── requirements.txt # Python dependencies
-│ └── setup.py # For pip install
-│
-├── frontend/
-│ ├── package.json # Node.js frontend
-│ ├── pages/page.js # React page with recommendation UI
-│ ├── components/ # UI components (Card, Button, etc.)
-│ └── public/
-│
-└── README.md
-
-yaml
-Copy code
-
----
-
 ## ⚙️ Backend Setup (FastAPI)
 
 1. Create a virtual environment:
@@ -80,7 +57,7 @@ Test default endpoint: http://127.0.0.1:8000/
 
 Test recommend endpoint via Postman or frontend
 
-⚙️ Frontend Setup (React)
+⚙️ Frontend Setup (NEXT)
 Navigate to frontend folder:
 
 bash
@@ -164,5 +141,6 @@ cd frontend
 npm install
 npm run dev
 Open http://localhost:3000 to use the app
+
 
 
