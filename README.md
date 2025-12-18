@@ -1,6 +1,6 @@
 # 🌟 Smart Course Recommender
 
-AI-powered **Course Recommendation System** that suggests courses based on your input using **Content-Based Filtering (TF-IDF & CountVectorizer)**. Built with **FastAPI** (backend) and **React + Tailwind CSS** (frontend).  
+AI-powered **Course Recommendation System** that suggests courses based on your input using **Content-Based Filtering (TF-IDF & CountVectorizer)**. Built with **FastAPI** (backend) and **Next JS** (frontend).  
 
 ---
 
@@ -164,4 +164,5 @@ cd frontend
 npm install
 npm run dev
 Open http://localhost:3000 to use the app
+
 
