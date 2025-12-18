@@ -11,11 +11,16 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+
 )
 
 class InputData(BaseModel):
     title: str
     metric: str = "cosine" 
+
+@app.get("/")
+def defaultt():
+    return {'message':"i am running"}
 
 @app.post("/recommend")
 def recommend(input: InputData):
