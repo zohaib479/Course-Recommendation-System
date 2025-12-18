@@ -30,7 +30,7 @@ export default function Page() {
       const data = await res.json();
       setResult(data.results);
     } catch (err) {
-      setError("❌ " + err.message);
+      setError("X" + err.message);
     } finally {
       setLoading(false);
     }
@@ -55,7 +55,7 @@ export default function Page() {
       <Card className="bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-2xl shadow-xl hover:scale-[1.02] transition">
         <CardContent className="p-6">
           <h3 className="text-xl font-bold text-blue-300 mb-1">
-            {course.Title}
+            {course.Title.toUpperCase()}
           </h3>
           <p className="text-sm text-gray-400 mb-3">
             {course.Organization}
